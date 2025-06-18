@@ -6,4 +6,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 public interface BookInterface {
     ResponseEntity<Book> getBookById(@PathVariable String bookId);
+    String healthCheck();
+
 }

@@ -15,8 +15,8 @@ public class BookController {
     @Autowired
     BookServiceImpl bookService;
     @GetMapping(path = "")
-    public String helloWorld() {
-        return "HELLO WORLD";
+    public String healthCheck() {
+       return bookService.healthCheck();
     }
 
     @GetMapping(path = "/admin")
